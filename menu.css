@@ -1,0 +1,157 @@
+/*Importation de la police*/
+
+@font-face {
+    src: url(fonts/Exo2-Italic-VariableFont_wght.ttf);
+    font-family: 'Variable Font';
+  }
+  
+  /*reset*/
+  
+  * {
+     margin: 0;
+     padding: 0;
+     font-family: 'Variable Font';
+  }
+  
+  /*Image de fond*/
+  
+  body{
+    background-image: url(imgs/backgroundimage.jpg);
+    height: 120vh;
+  }
+  
+  /*navbar css*/
+  
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#a1a0a0;
+    text-decoration: none;
+    flex-direction: row;
+    padding: 10px 20%;
+  }
+  
+  header a img{
+    height: 85px;
+    margin-right: 5px;
+  }
+  
+  #navtop {
+    display: flex;
+  }
+  
+  #navtop a {
+    display: flex;
+    align-items: center;
+    color:  #e7b734;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  #navtop a:hover, #navtop a:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+  
+  #navtop img {
+    height: 28px;
+  }
+  
+  /*Main css*/
+  
+  .annonce img {
+    height: 300px;
+    border-radius: 12px;
+  }
+   
+  .container {
+    padding: 20px; 
+    width: 450px;
+  }
+  .container  h1 {
+    color: #e7b734;
+  }
+  .container p {
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0; 
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .menus img {
+    height: 750px;
+    border-radius: 12px;
+  }
+
+  .moyenpaiement {
+    padding: 20px; 
+    width: 450px;
+  }
+  .moyenpaiement h1 {
+    color: #e7b734;
+  }
+  .moyenpaiement p {
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    margin: 0;
+  }
+  .moyenpaiement img {
+    height: 42px;
+  }
+  
+  
+  /*footer css*/
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #a1a0a0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* ajustez selon vos besoins */
+  }
+  
+  .footer-container p {
+    margin: 0; /* pour enlever le margin par défaut du paragraphe */
+    color: #e7b734;
+    font-weight: 600;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; /* ajustez selon vos besoins */
+  }
+  
+  .social-icons a {
+    margin: 0 5px; /* pour espacer un peu les icônes */
+    text-decoration: none;
+    color: #e7b734;
+    font-weight: 600;
+  }
+  
+  .social-icons a img {
+    height: 24px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .annonce img {
+      height: 100px;
+    }
+  }
